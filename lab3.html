@@ -3,88 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Profile Replica</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        .header {
-            background-color: #3b5998;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        .profile {
-            display: flex;
-        }
-        .left-column, .right-column {
-            width: 50%;
-            padding: 20px;
-        }
-        .left-column {
-            border-right: 1px solid #ccc;
-        }
-        .profile-pic {
-            width: 100px;
-            height: 100px;
-            border: 1px solid #ccc;
-            margin-bottom: 10px;
-        }
-        .info-box {
-            background-color: #f1f1f1;
-            padding: 10px;
-            border: 1px solid #ccc;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 18px;
-            color: #3b5998;
-            margin-bottom: 5px;
-        }
-        p {
-            font-size: 14px;
-            margin: 5px 0;
-        }
-    </style>
+    <title>The Facebook Profile</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>[thefacebook]</h1>
-        </div>
-        <div class="profile">
-            <div class="left-column">
-                <img class="profile-pic" src="cat.png" alt="Profile Picture">
-                <div class="info-box">
-                    <h2>Scott Pearson</h2>
-                    <p>BS, Computer Science</p>
-                    <p>Alumnus/Alumna</p>
-                </div>
-            </div>
-            <div class="right-column">
-                <div class="info-box">
-                    <h2>Information</h2>
-                    <p>Account Info:</p>
-                    <p>Member Since: January 12, 2005</p>
-                    <p>Last Login: February 9, 2005</p>
-                    <p>Email: pearsont89@xxxx.edu</p>
-                    <p>Phone: xxx-xxx-xxxx</p>
-                    <p>Screenname: ScottP7</p>
-                    <p>Relationship Status: Single</p>
-                    <p>Interests: Drinking, Football, Basketball, Tennis</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <!-- Header Section -->
+    <table width="100%" bgcolor="#007df0" cellpadding="15">
+        <tr>
+            <td align="center" style="color: white; font-size: 24px;">
+                <strong>thefacebook</strong>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Navigation Bar -->
+    <table width="100%" bgcolor="#007df0" cellpadding="10" cellspacing="0">
+        <tr align="center" style="font-size: 14px;">
+            <td><a href="#" style="color: white; text-decoration: none;">Home</a></td>
+            <td><a href="#" style="color: white; text-decoration: none;">Search</a></td>
+            <td><a href="#" style="color: white; text-decoration: none;">Global</a></td>
+            <td><a href="#" style="color: white; text-decoration: none;">School</a></td>
+            <td><a href="#" style="color: white; text-decoration: none;">Invite</a></td>
+            <td><a href="#" style="color: white; text-decoration: none;">FAQ</a></td>
+            <td><a href="#" style="color: white; text-decoration: none;">Logout</a></td>
+        </tr>
+    </table>
+
+    <!-- Main Content Area -->
+    <table width="1000px" align="center" cellpadding="10" cellspacing="0">
+        <tr>
+            <!-- Sidebar -->
+            <td width="20%" valign="top">
+                <form action="#">
+                    <input type="text" placeholder="Quick Search" style="width: 100%;"><br><br>
+                </form>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">My Groups</a></li>
+                    <li><a href="#">My Friends</a></li>
+                    <li><a href="#">My Account Preferences</a></li>
+                    <li><a href="#">My Privacy Preferences</a></li>
+                </ul>
+            </td>
+
+            <!-- Main Profile Section -->
+            <td width="80%" valign="top">
+                <table width="100%" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <!-- Profile Picture Section -->
+                        <td width="50%" valign="top" style="border: 1px solid #ccc;">
+                            <strong>Picture</strong><br><br>
+                            <img src="cat.png" alt="Profile Picture" width="250" height="200"><br><br>
+                            <button>Edit</button><br><br>
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li><a href="#">Visualize My Friends</a></li>
+                                <li><a href="#">Edit My Profile</a></li>
+                                <li><a href="#">My Account Preferences</a></li>
+                                <li><a href="#">My Privacy Preferences</a></li>
+                            </ul>
+                        </td>
+
+                        <!-- Information Section -->
+                        <td width="50%" valign="top" style="border: 1px solid #ccc;">
+                            <strong>Information</strong><br><br>
+                            <p><strong>Account Info:</strong></p>
+                            <p><strong>Name:</strong> Scott Pearson, BS</p>
+                            <p><strong>Member Since:</strong> January 12, 2005</p>
+                            <p><strong>Last Update:</strong> February 3, 2005</p>
+                            <p><strong>Email:</strong> spearson95@school.edu</p>
+                            <p><strong>Status:</strong> Alumnus/Alumna</p>
+                            <p><strong>Year:</strong> 2004</p>
+                            <p><strong>Concentration:</strong> Information Sciences</p>
+                            <p><strong>High School:</strong> Scranton HS '00</p>
+                            <p><strong>Phone:</strong> (555) 123-4567</p>
+                            <p><strong>Screenname:</strong> ScottP77</p>
+                            <p><strong>Looking For:</strong> Friendship, Dating, A Relationship, Networking</p>
+                            <p><strong>Interested In:</strong> Women</p>
+                            <p><strong>Political Views:</strong> Liberal</p>
+                            <p><strong>Interests:</strong> Drinking, Football, Basketball, Tennis</p>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>
