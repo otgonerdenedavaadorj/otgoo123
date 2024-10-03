@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.left-column {
+    width: 30%;
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px;
+}
+
+.right-column {
+    width: 70%;
+    padding: 30px;
+}
+
+.profile-pic img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.contact-info p,
+.skills ul,
+.education p,
+.languages p {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: #2b2b2b;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: white ;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.experience h3 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.experience p {
+    margin-bottom: 5px;
+}
+
+.experience ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
