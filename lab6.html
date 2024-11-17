@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Netflix Mongolia - Watch your favorite TV shows and movies online. Stream anywhere, anytime, with a Netflix membership.">
+    <meta property="og:title" content="Netflix Mongolia - Watch TV Shows Online, Watch Movies Online">
+    <meta property="og:description" content="Stream your favorite TV shows and movies with Netflix. Watch anywhere, anytime, with no contracts or hidden fees.">
+    <meta property="og:image" content="./6image/logo.png">
+    <script src="https://kit.fontawesome.com/391827d54c.js" crossorigin="anonymous" defer></script>
+    <link rel="shortcut icon" href="./6image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="lab6.css">
+    <title>Netflix Mongolia - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img class="logo" src="./6image/logo.png" alt="Netflix Mongolia Logo">
+            <div>
+                <button class="lang-btn" aria-label="Change language to English"><i class="fa-solid fa-globe"></i> English <img src="./6image/down-icon.png" alt="dropdown icon"></button>
+                <button>Sign In</button>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <h1>Unlimited POPCORN, TV shows and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form action="#" class="email-signup" onsubmit="return validateEmail()">
+                <input type="email" id="email" placeholder="Email address" required aria-label="Email address">
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="features">
+        <!-- Similar structure for features as before -->
+    </div>
+
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <ul class="accordion">
+            <!-- FAQ items as before, no changes needed here -->
+        </ul>
+        
+        <small>Ready to watch? Enter your email to create or restart your membership.</small>
+        
+        <form action="#" class="email-signup" onsubmit="return validateEmail()">
+            <input type="email" id="email" placeholder="Email address" required aria-label="Email address">
+            <button type="submit">Get Started</button>
+        </form>  
+    </div>
+
+    <div class="footer">
+        <h2>Questions? Call +976 xxxxxxxx</h2>
+        <!-- Footer columns as before -->
+        <button class="lang-btn" aria-label="Change language to English"><i class="fa-solid fa-globe"></i> English <img src="./6image/down-icon.png" alt="dropdown icon"></button>
+        <p class="copyright-text">Netflix Mongolia</p>
+    </div>
+
+    <script>
+        // Simple email validation function
+        function validateEmail() {
+            var email = document.getElementById('email').value;
+            var pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!pattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
